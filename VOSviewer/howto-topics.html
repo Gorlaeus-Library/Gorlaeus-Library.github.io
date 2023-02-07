@@ -23,7 +23,7 @@
 <meta name="author" content="Rutger de Jong, Dennis Bus" />
 
 
-<meta name="date" content="2023-02-03" />
+<meta name="date" content="2023-02-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -221,28 +221,28 @@ div.csl-indent {
 <li><p>Make sure the search settings are set to ‘Search in: Web of Science Core Collection’. The Core Collection is slightly smaller than all access to Web of Science, however it is the only collection with all information on article citations and therefore the best one to use for VOSviewer.</p></li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/wos-collections.png" alt="" />
+<img src="images/wos-collections.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="3" style="list-style-type: decimal">
 <li>We choose ‘Cited References’ and enter the DOI from the article as search term.</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/wos-cited-references.png" alt="" />
+<img src="images/wos-cited-references.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="4" style="list-style-type: decimal">
 <li>Select the correct article and click ‘See results’. We now have 3.635 citing articles. Once you are doing this for a real research, please write down the number of results and copy the query link for your reference.</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/wos-cited-articles.png" alt="" />
+<img src="images/wos-cited-articles.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="5" style="list-style-type: decimal">
 <li>Click on ‘Export’ and choose ‘Tab Delimited File’. Fill out the tab as follows:</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/wos-export.png" alt="" />
+<img src="images/wos-export.png" alt="" />
 <p class="caption">img</p>
 </div>
 <blockquote>
@@ -252,7 +252,7 @@ div.csl-indent {
 <li>Now open VOSViewer, click ‘Create’ and choose ‘Create a map based on text data’.</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/vos-text.png" alt="" />
+<img src="images/vos-text.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="7" style="list-style-type: decimal">
@@ -261,7 +261,7 @@ div.csl-indent {
 <li><p>Select to use terms from both the title and the abstract. Leave the checkmarks as they are and click next.</p></li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/vos-fields.png" alt="" />
+<img src="images/vos-fields.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="10" style="list-style-type: decimal">
@@ -272,7 +272,7 @@ div.csl-indent {
 <li>The minimum number of occurrences makes the difference between a too detailed map and a map you can use for visualization purposes. You may loose some very specific words, but I try to get the number of results down to 1000-2000. Choose next.</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/vos-threshold.png" alt="" />
+<img src="images/vos-threshold.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="12" style="list-style-type: decimal">
@@ -280,14 +280,14 @@ div.csl-indent {
 <li><p>VOSviewer will now display a list of all terms together with a relevancy ranking.The relevancy ranking tries to find out if a term has a common or specific meaning. It does so by checking the co-occurrence patterns. If a phrase is only mentioned a lot in the introductory part of articles for example, it will be less relevant than a phrase that occurs all over the text. You can choose to leave a word out by unchecking the box if you thing it is of no use.</p></li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/vos-relevance.png" alt="" />
+<img src="images/vos-relevance.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="14" style="list-style-type: decimal">
 <li>For this quick analysis we simply click finish. We now get our first basic overview of the citing articles.</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/vos-overview1.png" alt="" />
+<img src="images/vos-overview1.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="15" style="list-style-type: decimal">
@@ -299,7 +299,7 @@ div.csl-indent {
 <ol start="16" style="list-style-type: decimal">
 <li>Personally I look at the results and think the clustering is a bit off. I can see many terms on environmental issues in the red cluster that may be a cluster on their own. Remember: clustering and visualization is a qualitative and not a quantitave analysis. The choices we have made for including articles, terms, etc. are all shown in the results. To improve my map, I choose to change the clustering so my environmental part is split of. To do this, go to the analysis tab and change the clustering parameters. Here I set resolution from 1 to 1.20 and updated the map.</li>
 </ol>
-<p><img src="_bookdown_files/bookdown-demo_files/png/vos-overview2.png" alt="img" />
+<p><img src="images/vos-overview2.png" alt="img" />
 From the map I would now conclude there are four clusters which an expert could describe. I see research on using the VOSviewer methods for literature reviews and overviews for innovation and policies (green), applications for finding models/approaches in mainly the environmental sciences (blue), use in ranking of journals, countries and universities (red) and what looks like basic research for scientometric methods (yellow). In these cases it usually helps to check with an expert in the field.</p>
 <p>In this specific analysis there may be less clear boundaries as we did not start from a general search but from articles referring to VOSviewer.</p>
 <blockquote>
@@ -310,14 +310,14 @@ From the map I would now conclude there are four clusters which an expert could 
 </ol>
 <p>Below the visualization you will notice a bar with a scale for the average publication year. The size of a phrase is determined by the number of publications, the color is the average age. Thus something that is large and blue, has been researched a lot in the past. You will notice that the pandemic has crept up as relatively new term (yellow) with still a small number of publications judging by the size of the dot: are there chances in this subtopic? Why is there such a large connection to country? (tip: check the term pandemic via a filter in your Web of Science query) Medicine is relatively blue and large, so the use of VOSviewer for rankings in this field may be something that has been researched in-depth already.</p>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/vos-overview3.png" alt="" />
+<img src="images/vos-overview3.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="18" style="list-style-type: decimal">
 <li>With a density visualization (last tab) we can find the most important areas of research - at least if those terms are not all from the same papers. In this case VOSviewer seems to be mainly in use for ranking, with another focus point on the strategic – overview - use (concepts, state, approaches, challenges).</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/vos-overview4.png" alt="" />
+<img src="images/vos-overview4.png" alt="" />
 <p class="caption">img</p>
 </div>
 </div>

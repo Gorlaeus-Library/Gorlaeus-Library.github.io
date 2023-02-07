@@ -23,7 +23,7 @@
 <meta name="author" content="Rutger de Jong, Dennis Bus" />
 
 
-<meta name="date" content="2023-02-03" />
+<meta name="date" content="2023-02-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -220,7 +220,7 @@ div.csl-indent {
 <li>Go to <a href="https://www.lens.org" class="uri">https://www.lens.org</a> and choose for searching within scholarly works. As keywords we use <em>“circular econom*” OR “industrial ecology” OR “life cycle anal*”</em> which gives us around 15k results. As Document Type we select ‘Journal Article’ from the left menu, leaving us with around 12k articles.</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/lens0.png" alt="" />
+<img src="images/lens0.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="2" style="list-style-type: decimal">
@@ -228,14 +228,14 @@ div.csl-indent {
 <li><p>With the account I have exported all data as CSV. To do so, go to the small ‘Export button’ underneath the top navigation bar that says ‘Scholarly Works’ (this database has so many options that it may be hard to find). As parameters you can use something like the screenshot:</p></li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/lens.png" alt="" />
+<img src="images/lens.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="4" style="list-style-type: decimal">
 <li><p>If there is a large number of articles, LENS will send you an email to download the CSV. This usually takes just a few minutes.</p></li>
 <li><p>Go to VOSviewer and choose Create -&gt; ‘Create a map based on bibliographic data’. In the next screen choose ‘Read data from bibliographic database files, select the tab ’Lens’ and use your downloaded CSV.</p></li>
 <li><p>In the next screen we choose to analyze by Citations and Sources (in our case journals as we have articles published in journals). This way we will see connections between the journals.
-<img src="_bookdown_files/bookdown-demo_files/png/lens2.png" alt="img" /></p></li>
+<img src="images/lens2.png" alt="img" /></p></li>
 <li><p>The next screen asks us how many documents should be minimally in each source. We leave it at 5 for now to give a broad spectrum, but for a large set you can increase this number as you see fit. Click finish to create the visualization.</p></li>
 <li><p>You will now see a map that is dominated by two large journals containing many articles in the field: ‘Russian journal of occupational health and industrial ecology’ and the ‘Journal of industrial ecology’. This is to be expected as we are searching all fields: all articles from journals with ‘industrial ecology’ in the name will be in our search. If this proofs problematic for your search, limit the search to title and abstract or similar fields. Zooming in gives us a much better overview with quite a lot of specific clusters due to the generic keywords we used.</p></li>
 <li><p>Have a look at the items in the left bar to see what clusters there are. Some noteworthy are:</p></li>
@@ -246,11 +246,11 @@ div.csl-indent {
 <li>red, which is highly focused on chemical aspects and includes journals about catalysis.
 Hovering over a specific journal will give you citation links between the clusters (both ways). Thus you will notice that for example the communication between the socio-economic cluster in blue to the red chemistry cluster is very little. While the red cluster does cite a lot with clusters about production or health hazards. Considering these aspects might help you find the right cluster for your specific article.</li>
 </ul>
-<p><img src="_bookdown_files/bookdown-demo_files/png/vosviewer_chemistry.png" alt="img" />
+<p><img src="images/vosviewer_chemistry.png" alt="img" />
 10. Once you have an idea of where to find your journal within the clusters, it is time to focus on which journal might be the fit for you. Go to the tab ‘Overlay visualization’ in VOSviewer. With the average publication year, you can see the newer - up and coming - journals. However, if we change the visualization to use the average normalized citation, we can see what journal is most popular (avoiding the word impact as popular does not give an opinion on quality) with our specific search terms.</p>
 <p>For example, we can see that the <em>Journal of industrial ecology</em> is quite average in number of citations at 0.97. The Russian journal that also had a big output has 0.08 as avg. norm. citation. <em>Resources, Conservation and Recycling</em> in the same cluster as the ‘Journal of industrial ecology’ scores a 2.04, which means it is a little more popular if it fits your specific research. (In the image blue means a low number of average citations, while yellow is a high number of average citations.)</p>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/vosviewer-citations.png" alt="" />
+<img src="images/vosviewer-citations.png" alt="" />
 <p class="caption">img</p>
 </div>
 <p>The size of each circle gives the number of articles within our set that has been published in said journal. The larger the circle, the more the journal focuses on this type of research (which means you have a bigger chance of publishing there).</p>

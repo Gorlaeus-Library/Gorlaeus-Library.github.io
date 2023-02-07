@@ -23,7 +23,7 @@
 <meta name="author" content="Rutger de Jong, Dennis Bus" />
 
 
-<meta name="date" content="2023-02-03" />
+<meta name="date" content="2023-02-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -222,21 +222,21 @@ div.csl-indent {
 <li>Go to Nexis Uni, change to ‘Advanced Search’ and search for <em>“Universiteit Leiden”</em> . We set the filters to include only the following newspapers: Volkskrant, Trouw, Leidsch Dagblad en Reformatorisch Dagblad for the period 23-08-2017 until 23-08-2022.</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/nexis.png" alt="" />
+<img src="images/nexis.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="2" style="list-style-type: decimal">
 <li>We want to export all articles as full text, preferrably in .rtf as this can be read easily by Python. We can only do this if we break down our search in smaller numbers of articles, as we are allowed to export only the first 1000 results. So filter year by year and export in these subsets by first going to ‘Tijdlijn’ in the left column and then setting the timeline so you will have less than 1000 results.</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/nexis2.png" alt="" />
+<img src="images/nexis2.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="3" style="list-style-type: decimal">
 <li>Click on the download button at the top (arrow down) and use the settings below. As downloading functions for sets of 100, you have to fill out the field ‘Volledige documenten’ to the document numbers in the set and repeat this action until all documents have been downloaded. Make sure you save all documents in the same directory.</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/nexis3.png" alt="" />
+<img src="images/nexis3.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="4" style="list-style-type: decimal">
@@ -419,7 +419,7 @@ div.csl-indent {
 <li>Now we can use VOSviewer to create a plot with multiple overlays. Choose ‘Create’-&gt;‘Create a map based on text data’-&gt;‘Read data from Vos Viewer files’. Use the first file box for the text file and the second one for the scoring file.</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/textmap1.png" alt="" />
+<img src="images/textmap1.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="9" style="list-style-type: decimal">
@@ -427,14 +427,14 @@ div.csl-indent {
 <li><p>When asked for a minimum number of terms I usually select to keep around the 1000-2000 results. In this case this means a term should occur at least 24 times. Next we finish and create our map.</p></li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/textmap2.png" alt="" />
+<img src="images/textmap2.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="11" style="list-style-type: decimal">
 <li>Looking at our map, I get the idea that some clusters are overlapping too much. In red, for example, I see both students and political parties mentioned. Therefore it may be better to increase the resolution and create more clusters. To do this I have entered 1.2 in the box for resolution (Analysis tab on the left side, see Clustering). Press ‘Update clustering’ to create the new visualization.</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/textmap3.png" alt="" />
+<img src="images/textmap3.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="12" style="list-style-type: decimal">
@@ -453,14 +453,14 @@ div.csl-indent {
 <li>Now we go to the tab ’Overlay visualization’at the top of VOSviewer. On the right we can choose what visualization we want. By default it uses the first score, in our case number of days since the start of the newsline. Under scores you can select the scoring you want to use, fo example our news source Volkskrant.</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/textmap4.png" alt="" />
+<img src="images/textmap4.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="14" style="list-style-type: decimal">
 <li>Let’s switch to the scoring for ‘Wim Voermans’. Voermans is a well know Leiden professor of consitutional and administrative law. He is regularly asked for comments on state affairs, for example during the elections or for the nitrogen emission rights that have a large impact on the functioning of our government. The visualization reflects this. These topics (cabinet, council, debate, nitrogen) are yellow in the visualization (often occur in combination with Wim Voermans as you can see in the scale at the bottom). The size of the dot of each cluster, is an indication whether the topic is mentioned a lot within all documents.</li>
 </ol>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/textmap5.png" alt="" />
+<img src="images/textmap5.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ol start="15" style="list-style-type: decimal">
@@ -471,32 +471,32 @@ div.csl-indent {
 If we hover over the word ‘campus’ you will see a score in the bottom bar for Leidsch Dagblad of 0.74. This means that for the 86 occurrences of ‘campus’ in the set, 74 per cent - 64 - times it was in Leidsch Dagblad. So even though the number of occurrences is relatively small, the use of the term is quite unique for Leidsch Dagblad thus it has a specific focus here. (If all newspapers found it of equal interest, it would have been around 0.2-0.3 and blue)</li>
 </ul>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/textmap6.png" alt="" />
+<img src="images/textmap6.png" alt="" />
 <p class="caption">img</p>
 </div>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/textmap7.png" alt="" />
+<img src="images/textmap7.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ul>
 <li><strong>De Volkskrant</strong> is a big national newspaper, a bit elitist and it is well known for politics and science reporting. You can immediately see that within this set Volkskrant is dominant in reporting about our observatory, while the university affairs are less important. (Be aware that Leidsch Dagblad has a dominance in university affairs, but even then, Volkskrant scores 0.13 while we expected 0.25 according to the table below).</li>
 </ul>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/textmap8.png" alt="" />
+<img src="images/textmap8.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ul>
 <li><strong>Trouw</strong> is a modern christian newspaper well known for reporting science and high quality journalism. It’s a bit of a generalist in this set. It’s not doing that well in astronomy which is a subject that may question belief. Within the set its focus is slightly more towards politics, security and international relations.</li>
 </ul>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/textmap9.png" alt="" />
+<img src="images/textmap9.png" alt="" />
 <p class="caption">img</p>
 </div>
 <ul>
 <li><strong>Reformatorisch Dagblad</strong> is a very traditional christian newspaper. Judging by the scale, it is pretty average in most subjects. Within the set it has a focus on for example words such as god (0.42) and church (0.39). This is remarkable as the number of articles from this source is lower than from the other sources.</li>
 </ul>
 <div class="figure">
-<img src="_bookdown_files/bookdown-demo_files/png/textmap10.png" alt="" />
+<img src="images/textmap10.png" alt="" />
 <p class="caption">img</p>
 </div>
 <table>
