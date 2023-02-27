@@ -23,7 +23,7 @@
 <meta name="author" content="Rutger de Jong, Dennis Bus" />
 
 
-<meta name="date" content="2023-02-08" />
+<meta name="date" content="2023-02-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -228,7 +228,7 @@ similarity_{ij}=\cfrac{2n_{documents}citations_{shared\_ij}}{citations_{total_i}
 \]</span></p>
 <p>So how do we go from a high dimensional similarity- matrix - score to a visual representation? The really difficult task of VOS is to map all of these documents on a two dimensional chart, so that the distance between the documents is related to the inverse of their similarity (they are displayed closer to each other if they are more similar), while at the same time the documents should not overlap in the visualization. As the sets get bigger you may imagine how the complexity builds and the exact position becomes more of an estimation, but still provides us with a clear picture of overlap within linked articles. The distance between fully unlinked articles or clusters of articles is less clear: in fact they should be as far from the other documents they are not (indirectly) linked to as possible.</p>
 <div class="figure">
-<img src="images/distribution.png" alt="" />
+<img src="images/distribution2.png" alt="" />
 <p class="caption">img</p>
 </div>
 <blockquote>
@@ -237,7 +237,7 @@ similarity_{ij}=\cfrac{2n_{documents}citations_{shared\_ij}}{citations_{total_i}
 <p>After the mapping to x,y-coordinates on a map, VOSviewer goes one step further and also indicates to us some clusters of highly related terms visualized with colours. These clusters make the maps so easy to interprete (and sell in presentations to funders).</p>
 <p>A common way in AI to find clusters is by density-based clustering. In other words, where there are many points, there is most likely a clustering of related points. There is no set number of clusters in this technique, but you have to set tresholds (which you can adjust in the program) for the document similarity so the algorithm knows when to neglect a document for a specific cluster. It works as follows:</p>
 <div class="figure">
-<img src="images/clustering.drawio.png" alt="" />
+<img src="images/clustering2.png" alt="" />
 <p class="caption">img</p>
 </div>
 <p>If the clustering seems off, you can play with the thresholds to provide a better view. Overall clustering works best if the set is not completely uniform. In case you see just one big circle, it could well be that your set consists of very uniform topics or highly unrelated topics.</p>
